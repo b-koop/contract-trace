@@ -1,0 +1,32 @@
+{
+  "name": "contract-trace",
+  "version": "0.1.0",
+  "description": "Pi extension that extracts TypeScript/JavaScript file contracts for contract tracing.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "typescript",
+    "contract-trace"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.19",
+    "vitest": "^3.1.4"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  }
+}
